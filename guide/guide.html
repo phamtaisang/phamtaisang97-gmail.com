@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Requirement</title>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 menu_left" style="
+    position: fixed;
+    left: 0;
+">
+                <ul>
+                    <li class="father active"><a href="../requirement/requirement.html"><h5>Requirement</h5></a></li>
+
+                    <ul>
+                        <li><a href="#">Các thành phần</a></li>
+
+                        <li><a href="#">Định nghĩa về màu font</a></li>
+
+                        <li><a href="#">Tương tích live-preview ở Admin</a></li>
+                    </ul>
+
+
+                    <li class="father"><a href="#"><h5>Development guide</h5></a></li>
+                    <ul>
+                        <li><a href="#quytrinhdangky">Quy trình đăng ký/kích hoạt tài khoản developer</a></li>
+                        <li><a href="#huongdanhsudung">Hướng dẫn sử dụng công cụ phát triển theme</a></li>
+                        <li><a href="#cautruc">Cấu trúc chuẩn bộ theme cần có</a></li>
+                        <li><a href="#chitietApi">Chi tiết API, endpoint, data của hệ thống</a></li>
+                    </ul>
+
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-8 col-md-6" style="position: absolute; right: 0;"><strong>T&agrave;i liệu hướng dẫn ph&aacute;t
+                triển Theme cho nền tảng b&aacute;n h&agrave;ng online - Onshop</strong>
+                <ul>
+                    <ul>
+                        <li>
+                            <h5 id="quytrinhdangky">Quy tr&igrave;nh đăng k&yacute;/k&iacute;ch hoạt</h5>
+                            <p><span style="color: #ff9900;">1. Li&ecirc;n hệ/K&yacute; hợp đồng trở th&agrave;nh đối t&aacute;c với Onshop</span>
+                            </p>
+                            <p><span style="color: #ff9900;">2. Onshop tạo t&agrave;i khoản c&ocirc;ng cụ ph&aacute;t triển theme cho đối t&aacute;c</span>
+                            </p>
+                            <p><span style="color: #ff9900;">3. Onshop gửi t&agrave;i khoản c&ocirc;ng cụ ph&aacute;t triển theme cho đối t&aacute;c</span>
+                            </p>
+                            <p><span style="color: #ff9900;">4. Đối t&aacute;c ph&aacute;t triển theme tr&ecirc;n c&ocirc;ng cụ ph&aacute;t triển Onshop cung cấp</span>
+                            </p>
+                            <p><span style="color: #ff9900;">5. Đối t&aacute;c gửi bản zip Theme đ&atilde; ho&agrave;n thiện cho Onshop</span>
+                            </p>
+                            <p><span style="color: #ff9900;">6. Onshop kiểm tra, đ&aacute;nh gi&aacute; theme đối t&aacute;c đ&atilde; gửi</span>
+                            </p>
+                            <p><span style="color: #ff9900;">7. Nếu chưa đạt y&ecirc;u cầu: Đối t&aacute;c tiếp tục ph&aacute;t triển theme tr&ecirc;n c&ocirc;ng cụ ph&aacute;t triển Onshop cung cấp, lặp lại bước 4-5-6</span>
+                            </p>
+                            <p><span style="color: #ff9900;">8. Nếu đạt y&ecirc;u cầu: Onshop th&ocirc;ng b&aacute;o cho đối t&aacute;c v&agrave; đẩy theme l&ecirc;n kho theme của Onshop</span>
+                            </p>
+                            <p><span style="color: #ff9900;">9. Thực thi luồng thanh to&aacute;n, hợp t&aacute;c, lợi nhuận... giữa đối t&aacute;c v&agrave; Onshop</span>
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+                <hr/>
+                <ul>
+                    <ol style="list-style-type: upper-roman;">
+                        <li>
+                            <h5 id="huongdanhsudung">Hướng dẫn sử dụng c&ocirc;ng cụ ph&aacute;t triển theme</h5>
+                            <p><span style="color: #ff9900;">1. Tại thanh điều hướng b&ecirc;n tr&aacute;i: chọn Website &gt; Giao diện</span>
+                            </p>
+                            <p><span style="color: #ff9900;">2. Tại m&agrave;n h&igrave;nh giao diện: bấm v&agrave;o n&uacute;t "Ph&aacute;t triển giao diện"</span>
+                            </p>
+                            <p><span style="color: #ff9900;">3. Tại m&agrave;n h&igrave;nh ph&aacute;t triển giao diện c&oacute; c&aacute;c t&iacute;nh năng sau:</span>
+                            </p>
+                            <p><span style="color: #ff9900;">*3.1 Danh s&aacute;ch giao diện đang ph&aacute;t triển, gồm:</span>
+                            </p>
+                            <ul style="list-style-type: circle;">
+                                <li><span style="text-decoration: underline;"><span
+                                        style="color: #ff9900; text-decoration: underline;">Ảnh</span></span>
+                                    <p><span style="color: #ff9900;">+ Ảnh giao diện, y&ecirc;u cầu c&oacute; trong theme</span>
+                                    </p>
+                                </li>
+                                <li><span style="color: #ff9900;">T&ecirc;n giao diện</span>
+                                    <p><span style="color: #ff9900;">+ T&ecirc;n giao diện, lấy theo t&ecirc;n theme từ file .zip</span>
+                                    </p>
+                                </li>
+                                <li><span style="text-decoration: underline;"><span
+                                        style="color: #ff9900; text-decoration: underline;">H&agrave;nh động</span></span>
+                                    <p><span style="color: #ff9900;">+ Sửa giao diện Đến trang sửa giao diện</span></p>
+                                    <p><span style="color: #ff9900;">+ Xo&aacute; giao diện Xo&aacute; giao diện đang ph&aacute;t triển</span>
+                                    </p>
+                                    <p><span style="color: #ff9900;">+ Tải giao diện về Tải giao diện về</span></p>
+                                </li>
+                                <li><span style="text-decoration: underline;"><span
+                                        style="color: #ff9900; text-decoration: underline;">[link] Sử dụng</span></span>
+                                    <p><span style="color: #ff9900;">+ Sử dụng giao diện hiện tại l&agrave; giao diện cho trang cửa h&agrave;ng b&ecirc;n ngo&agrave;i</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <p><span style="color: #ff9900;">*3.2 N&uacute;t: tải giao diện l&ecirc;n</span></p>
+                            <ul style="list-style-type: circle;">
+                                <li><span style="text-decoration: underline;"><span
+                                        style="color: #ff9900; text-decoration: underline;">Tải giao diện l&ecirc;n. Quy định:</span></span>
+                                    <p><span style="color: #ff9900;">- Loại file: .zip</span></p>
+                                    <p><span style="color: #ff9900;">- Thư mục b&ecirc;n trong: t&ecirc;n theme &gt; c&aacute;c thư mục con theo ti&ecirc;u chuẩn cấu tr&uacute;c bộ theme</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </ul>
+                <hr/>
+<!--                cấu trúc chuẩn bộ theme-->
+                <ul>
+                    <li>
+                        <h5 id="cautruc">Cấu tr&uacute;c chuẩn bộ theme</h5>
+                        <p>Ng&ocirc;n ngữ lập tr&igrave;nh : javascript/css/twig template</p>
+                        <a href="Tham khảo t&agrave;i liệu về Twig: https://twig.symfony.com/">Tham khảo t&agrave;i liệu
+                            về Twig: https://twig.symfony.com/</a>
+                        <p><strong>Cấu tr&uacute;c thư mục:</strong></p>
+                        <ul style="list-style-type: circle;">
+                            <li><a href="#"> t&ecirc;n theme </a></li>
+                            <ul style="list-style-type: circle;">
+                                <li><strong>asset</strong></li>
+                                <ul style="list-style-type: circle;">
+                                    <li>default_config</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#default.json">default.json</a></li>
+                                    </ul>
+                                    <li>sass</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li>override</li>
+                                        <ul style="list-style-type: circle;">
+                                            <li><a href="#color.css">color.css</a></li>
+                                            <li><a href="#">text.css</a></li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li><strong>css</strong> ( T&ugrave;y nh&agrave; ph&aacute;t triển )</li>
+                                <li><strong>font</strong>( T&ugrave;y nh&agrave; ph&aacute;t triển )</li>
+                                <li><strong>image</strong></li>
+                                <ul style="list-style-type: circle;">
+                                    <li><a href="#">&lt; t&ecirc;n theme &gt;.png</a></li>
+                                </ul>
+                                <li><strong>images</strong>( T&ugrave;y nh&agrave; ph&aacute;t triển )</li>
+                                <li><strong>js</strong>( T&ugrave;y nh&agrave; ph&aacute;t triển )</li>
+                                <li><strong>template</strong></li>
+                                <ul style="list-style-type: circle;">
+                                    <li>about</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">about.twig</a></li>
+                                    </ul>
+                                    <li>account</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">account.twig</a></li>
+                                        <li><a href="#">login.twig</a></li>
+                                        <li><a href="#">reset.twig</a></li>
+                                        <li><a href="#">order_info.twig</a></li>
+                                        <li><a href="#">forgotten_success.twig</a></li>
+                                        <li><a href="#">forgotten.twig</a></li>
+                                        <li><a href="#">order_list.twig</a></li>
+                                        <li><a href="#">register.twig</a></li>
+                                    </ul>
+                                    <li>blog</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">blog.twig</a></li>
+                                    </ul>
+                                    <li>checkout</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">checkout.twig</a></li>
+                                        <li><a href="#">profile.twig</a></li>
+                                        <li><a href="#">checkout_nav.twig</a></li>
+                                        <li><a href="#">my_orders.twig</a></li>
+                                        <li><a href="#">setting.twig</a></li>
+                                        <li><a href="#">order_success.twig</a></li>
+                                        <li><a href="#">history.twig</a></li>
+                                        <li><a href="#">order_preview.twig</a></li>
+                                    </ul>
+                                    <li>common</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">footer.twig</a></li>
+                                        <li><a href="#">home.twig</a></li>
+                                        <li><a href="#">shop.twig</a></li>
+                                        <li><a href="#">shop_append.twig</a></li>
+                                        <li><a href="#">header.twig</a></li>
+                                        <li><a href="#">column_left.twig</a></li>
+                                        <li><a href="#">success.twig</a></li>
+                                    </ul>
+                                    <li>contact</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">contact.twig</a></li>
+                                    </ul>
+                                    <li>contents</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">content_detail.twig</a></li>
+                                    </ul>
+                                    <li>error</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="not_found.twig">not_found.twig</a></li>
+                                    </ul>
+                                    <li>product</li>
+                                    <ul style="list-style-type: circle;">
+                                        <li><a href="#">category.twig</a></li>
+                                        <li><a href="#">search.twig</a></li>
+                                        <li><a href="#">product.twig</a></li>
+                                        <li><a href="#">product_detail.twig</a></li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+<!--end cấu trúc chuẩn theme-->
+<!--            ý nghĩa     -->
+                <h5>&Yacute; nghĩa</h5>
+                <p id="default.json"><span style="text-decoration: underline; color: #000000;">#default.json</span></p>
+                <p style="padding-left: 30px; text-align: left;"><span style="color: #ff9900;">
+                    File định nghĩa m&agrave;u sắc v&agrave; font chữ mặc định cho theme</span><br/><span
+                        style="color: #ff9900;">C&aacute;c nội dung c&oacute; thể sửa được trong file default.json:</span><br/><span
+                        style="color: #ff9900;">"config_theme_color" &gt; "main" &gt; "main" &gt; "hex": "#fda7a8": định nghĩa m&agrave;u chủ đạo, tức l&agrave; c&aacute;c m&agrave;u c&oacute; thể thay đổi theo cấu h&igrave;nh "m&agrave;u chủ đạo" ở phần thiết lập theme builder bởi admin</span><br/><span
+                        style="color: #ff9900;">"config_theme_color" &gt; "main" &gt; "button" &gt; "hex": "#fda7a8": định nghĩa m&agrave;u chủ đạo, tức l&agrave; m&agrave;u c&aacute;c n&uacute;t bấm c&oacute; thể thay đổi theo cấu h&igrave;nh "m&agrave;u n&uacute;t bấm" ở phần thiết lập theme builder bởi admin</span><br/><span
+                        style="color: #ff9900;">"config_theme_color" &gt; "all" &gt; "font": "Tahoma": định nghĩa font chữ được sử dụng, tức l&agrave; font chữ c&oacute; thể thay đổi theo cấu h&igrave;nh "font chữ" ở phần thiết lập theme builder bởi admin</span><br/><span
+                        style="color: #ff9900;">"config_theme_color" &gt; "all" &gt; "font": "supported-fonts": định nghĩa font chữ c&oacute; thể được lựa chọn khi cấu h&igrave;nh "font chữ" ở phần thiết lập theme builder bởi admin</span>
+                </p>
+                <p><b>Ví dụ</b></p>
+                <pre class=" language-php">
+                    <code class=" language-php">
+                    {
+                        "config_theme_color": {
+                            "main": {
+                                "main": {
+                                    "hex": "#fda7a8", "visible": 1
+                                }
+                                ,
+                                "button": {
+                                    "hex": "#FDA7A8", "visible": 1
+                                }
+                            }
+                        }
+                        ,
+                        "config_theme_text": {
+                            "all": {
+                                "title": "Font Tahoma",
+                                "font": "Tahoma",
+                                "supported-fonts": [
+                                    "Open Sans",
+                                    "IBM Plex Sans",
+                                    "Courier New",
+                                    "Roboto",
+                                    "Nunito",
+                                    "Arial",
+                                    "DejaVu Sans",
+                                    "Tahoma",
+                                    "Time News Roman"
+                                    ]
+                            }
+                        }
+                    }
+                    </code>
+                </pre>
+                <p id="color.json"><span style="text-decoration: underline; color: #000000;">#color.css</span></p>
+                <p id="text.json"><span style="text-decoration: underline; color: #000000;">#text.css</span></p>
+                <p id=""><span style="text-decoration: underline; color: #000000;">.......</span></p>
+                <p id="about.json"><span style="text-decoration: underline; color: #000000;">#account.twig</span></p>
+                <p style="padding-left: 30px; text-align: left;"><span style="color: #ff6600;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Trang quản l&yacute; t&agrave;i khoản&quot;}" data-sheets-userformat="{&quot;2&quot;:14721,&quot;3&quot;:{&quot;1&quot;:0,&quot;3&quot;:1},&quot;10&quot;:2,&quot;11&quot;:4,&quot;14&quot;:{&quot;1&quot;:3,&quot;3&quot;:1},&quot;15&quot;:&quot;Arial&quot;,&quot;16&quot;:12}">Trang quản l&yacute; t&agrave;i khoản</span></p>
+                <p style="padding-left: 30px; text-align: left;">&nbsp;</p>
+                <p style="text-align: left; padding-left: 30px;"><strong>Chi tiết API</strong></p>
+                <p style="text-align: left; padding-left: 90px;">&nbsp;</p>
+                <h5 style="text-align: left; padding-left: 30px;">?route=account/account</h5>
+                <p style="text-align: left; padding-left: 90px;">&nbsp;</p>
+                <p style="text-align: left; padding-left: 60px;">Dữ liệu trả về :</p>
+                <p style="text-align: left; padding-left: 90px;"><strong>- breadcrumbs</strong></p>
+                <pre style="padding-left: 0px;"><code>
+                    "array( [ 'text' =&gt; '
+                    ', 'href' =&gt; 'common/home' ], [ 'text' =&gt; '
+                    ', 'href' =&gt; 'checkout/profile' ] ); Hiển thị text:
+                    link tương ứng: common/home / checkout/profile"
+                </code></pre>
+                <p style="text-align: left; padding-left: 90px;"><strong>- success</strong></p>
+                <p style="text-align: left; padding-left: 120px;">Text th&ocirc;ng b&aacute;o th&agrave;nh c&ocirc;ng</p>
+                <p style="text-align: left; padding-left: 90px;"><strong>- edit</strong></p>
+                <p style="text-align: left; padding-left: 120px;">Link edit t&agrave;i khoản: account/edit</p>
+                <p style="text-align: left; padding-left: 90px;"><strong>- password</strong></p>
+                <p style="text-align: left; padding-left: 120px;">Link đổi mật khẩu t&agrave;i khoản: account/password</p>
+                <p style="text-align: left; padding-left: 90px;"><strong>- address</strong></p>
+                <p style="text-align: left; padding-left: 120px;">Link sửa địa chỉ t&agrave;i khoản: account/address</p>
+                <p style="text-align: left; padding-left: 90px;"><strong>- order</strong></p>
+                <p style="text-align: left; padding-left: 120px;">Link danh s&aacute;ch đơn h&agrave;ng của t&agrave;i khoản: account/order</p>
+                <p style="text-align: left; padding-left: 90px;">&nbsp;</p>
+                <h5 style="text-align: left; padding-left: 60px;">?route=account/account/country</h5>
+                <p style="text-align: left; padding-left: 60px;">&nbsp;</p>
+                <p style="text-align: left; padding-left: 90px;">GET =&gt; country_id<br />"id country truyền v&agrave;o. Cụ thể:<br />- Việt Nam: 100 D&ugrave;ng gọi = AJAX"</p>
+                <p style="text-align: left; padding-left: 60px;">Dữ liệu trả về</p>
+                <pre style="padding-left: 0px;">
+                    <code>
+                        "array(
+                            'country_id'        =&gt; '',
+                            'name'              =&gt; '',
+                            'iso_code_2'        =&gt; '',
+                            'iso_code_3'        =&gt; '',
+                            'address_format'    =&gt; '',
+                            'postcode_required' =&gt; '',
+                            'zone'              =&gt; '',
+                            'status'            =&gt; ''
+                        );"
+                    </code>
+                </pre>
+
+        <!-- end ý nghĩa -->
+                <h5 id="chitietApi">Chi tiết API, endpoint, data của hệ thống</h5>
+                <ul style="list-style-type: circle;">
+                    <li>about</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">about.twig</a></li>
+                    </ul>
+                    <li>account</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">account.twig</a></li>
+                        <li><a href="#">login.twig</a></li>
+                        <li><a href="#">reset.twig</a></li>
+                        <li><a href="#">order_info.twig</a></li>
+                        <li><a href="#">forgotten_success.twig</a></li>
+                        <li><a href="#">forgotten.twig</a></li>
+                        <li><a href="#">order_list.twig</a></li>
+                        <li><a href="#">register.twig</a></li>
+                    </ul>
+                    <li>blog</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">blog.twig</a></li>
+                    </ul>
+                    <li>checkout</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">checkout.twig</a></li>
+                        <li><a href="#">profile.twig</a></li>
+                        <li><a href="#">checkout_nav.twig</a></li>
+                        <li><a href="#">my_orders.twig</a></li>
+                        <li><a href="#">setting.twig</a></li>
+                        <li><a href="#">order_success.twig</a></li>
+                        <li><a href="#">history.twig</a></li>
+                        <li><a href="#">order_preview.twig</a></li>
+                    </ul>
+                    <li>common</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">footer.twig</a></li>
+                        <li><a href="#">home.twig</a></li>
+                        <li><a href="#">shop.twig</a></li>
+                        <li><a href="#">shop_append.twig</a></li>
+                        <li><a href="#">header.twig</a></li>
+                        <li><a href="#">column_left.twig</a></li>
+                        <li><a href="#">success.twig</a></li>
+                    </ul>
+                    <li>contact</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">contact.twig</a></li>
+                    </ul>
+                    <li>contents</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">content_detail.twig</a></li>
+                    </ul>
+                    <li>error</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="not_found.twig">not_found.twig</a></li>
+                    </ul>
+                    <li>product</li>
+                    <ul style="list-style-type: circle;">
+                        <li><a href="#">category.twig</a></li>
+                        <li><a href="#">search.twig</a></li>
+                        <li><a href="#">product.twig</a></li>
+                        <li><a href="#">product_detail.twig</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

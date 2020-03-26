@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Requirement</title>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 menu_left" style="
+    position: fixed;
+    left: 0;
+">
+                <ul>
+                    <li class="father active"><a href="#"><h5>Requirement</h5></a></li>
+
+                    <ul>
+                        <li><a href="#">Các thành phần</a></li>
+
+                        <ul>
+                            <li><a href="#luuychung">Lưu ý chung</a></li>
+                            <li><a href="#header">Header</a></li>
+                            <li><a href="#footer">Footer</a></li>
+                            <li><a href="#trangchu">Trang chủ</a></li>
+
+                            <ul>
+                                <li><a href="#slideshow">slide show</a></li>
+                                <li><a href="#">Danh mục sản phẩm</a></li>
+                                <li><a href="#">Sản phẩm khuyến mãi</a></li>
+                                <li><a href="#">Sản phẩm bán chạy</a></li>
+                                <li><a href="#">Sản phẩm Mới</a></li>
+                                <li><a href="#">Chi tiết ô sản phẩm (một ô sản phẩm trên 1 hàng)</a></li>
+                                <li><a href="#">Banner</a></li>
+                                <li><a href="#">Đối tác</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+
+                            <li><a href="#">Danh sách sản phẩm</a></li>
+
+                        </ul>
+
+                        <li><a href="#">Định nghĩa về màu font</a></li>
+
+                        <li><a href="#">Tương tích live-preview ở Admin</a></li>
+                    </ul>
+
+
+                    <li class="father"><a href="../guide/guide.html"><h5>Development guide</h5></a></li>
+                    <ul>
+                        <li><a href="#">Quy trình đăng ký/kích hoạt tài khoản developer</a></li>
+                        <li><a href="#">Hướng dẫn sử dụng công cụ phát triển theme</a></li>
+                        <li><a href="#">Cấu trúc chuẩn bộ theme cần có</a></li>
+                        <li><a href="#">Chi tiết API, endpoint, data của hệ thống</a></li>
+                    </ul>
+
+                </ul>
+            </div>
+            <div class="col-sm-8" style="
+    position: absolute;
+    right: 0;
+">
+                <h2 id="luuychung">Lưu ý chung</h2>
+                <li>Tất cả ảnh sử dụng trong giao diện không được phóng to quá 100% kích thước hiển thị thực tế của ảnh,
+                    gây mờ ảnh
+                </li>
+                <li>Thiết kế trong màn hình Width = 1440px, theo lưới 12 cột chuẩn Boostrap</li>
+                <li>Các nội dung cần chuyển hết sang tiếng Việt, không để trạng thái nửa Anh nửa Việt</li>
+                <li>Danh sách sản phẩm, danh sách bài viết rỗng phải có thông báo kèm theo (ví dụ: Không có sản phẩm phù
+                    hợp)
+                </li>
+                <li>Breadcrum để đầy đủ: Trang chủ &gt; Danh mục (Sản phẩm / Chủ đề / Tài khoản ...) &gt; Tên page hiện tại
+                </li>
+                <li>Lưu ý: Có thể sử dụng breadcrum để điều hướng =&gt; chọn màu sắc phù hợp để có thể click vào</li>
+                <li>Chiều cao banner, slide, popup ko cao quá 1 màn hình</li>
+                <li>Banner, Slideshow không có text + nút bấm nằm trên ảnh</li>
+                <li>Ảnh sản phẩm không trùng lặp</li>
+                <li>Màu sắc chữ không trùng với màu nền</li>
+                <li>Menu thiết kế phải có tối thiểu 3 cấp.</li>
+                <li>Đơn vị tiền tệ: chỉ sử dụng ₫. Chú ý format dạng phân cách hàng ngàn (.) và dấu thập phân (,). Ví
+                    dụ: 12.356.421,12 đ, 12.356.421 đ,
+                </li>
+                <li>Lưu ý thiết kế các trường hợp thông tin trống. Ví dụ: chưa cập nhật số điện thoại, chưa có
+                    email...
+                </li>
+                <li>Có nút Back to Top</li>
+                <li>(Quy định về font chữ) Định nghĩa và chỉ sử dụng: Font family dùng cho tiêu đề + Font family dùng
+                    cho nội dung
+                </li>
+                <li>(Quy định về màu sắc) Định nghĩa và chỉ sử dụng: Màu chủ đạo - Màu hover - Màu nút bấm - màu nút bấm
+                    disabled - Màu viền - Màu chữ chính - Màu chữ phụ
+                </li>
+                <li>Các trang được link với nhau thông qua các button, thẻ &lt; a &gt;... để có thể xem demo</li>
+                <li>Hàng, cột layout thẳng hàng</li>
+                <hr>
+                <h2 id="header">Header</h2>
+                <li><span>Thanh thông báo đầu trang (hay gọi là announcement bar):</span> chỉ gồm 1 dòng text, có thể gắn link vào
+                    text (thiết kế có trạng thái khi hover)
+                </li>
+                <li><span>Menu:</span> Tối thiểu phải có nút Trang chủ và Sản phẩm</li>
+                <li><span>Logo:</span> Width &lt;= 200px, mobile: nên để nhỏ hơn, khoảng &lt;= 120px</li>
+                <li><span>Có các chức năng:</span> Giỏ hàng, thanh tìm kiếm, đăng ký , đăng nhập</li>
+                <li><span>Thiết kế 2 trạng thái:</span> chưa đăng nhập và đã đăng nhập.</li>
+                <li><span>Chưa đăng nhập:</span> Có 2 nút Đăng ký và Đăng nhập</li>
+                <li><span>Đã đăng nhập:</span> Có icon User + tên user. click vào Icon có dropdown 2 action: Tài khoản của tôi và
+                    Đăng xuất
+                </li>
+                <li>Thiết kế trường hợp khi cuộn xuống =&gt; fix header ở top (thiết kế header rút gọn)</li>
+                <hr>
+                <h2 id="footer">Footer</h2>
+                <li><span>Liên hệ:</span> Logo, Địa chỉ, Số điện thoại, Email</li>
+                <li><span>Tài khoản:</span> Tài khoản của tôi, Giỏ hàng; Sản phẩm yêu thích, Lịch sử mua hàng</li>
+                <li><span>Liên kết nhanh:</span> Giới thiệu, Liên hệ, Chính sách đổi trả, Câu hỏi thường gặp</li>
+                <li>Đăng ký theo dõi cửa hàng (nhập email subscribe); danh sách mạng xã hội (Facebook, Instagram,
+                    Youtube)
+                </li>
+                <hr>
+                <h2 id="trangchu">Trang chủ</h2>
+                <h5>Slideshow</h5>
+                <p>Ít nhất 3 ảnh trong slideshows</p>
+                <h5>Danh mục sản phẩm</h5>
+                <p>Có phần Liệt kê danh mục sản phẩm. Lưu ý: không dùng Icon ở đầu mỗi Tên danh mục; mỗi danh mục chỉ có 1 cấp độ</p>
+                <h5>Sản phẩm khuyến mãi</h5>
+                <h5>Sản phẩm bán chạy</h5>
+                <h5>Sản phẩm Mới</h5>
+                <p>Hiển thị một số sản phẩm nổi bật (demo phải đáp ứng yêu cầu chi tiết sản phẩm bên dưới)</p>
+                <b>Lưu ý:</b>
+                <p> - để đúng tên 3 sections là: Sản phẩm khuyến mãi, sản phẩm bán chạy và sản phẩm mới</p>
+                <p>- hỗ trợ hiển thị 3, 4, 6 sản phẩm ở mỗi page (mỗi khung nhìn)</p>
+                <p>- Có nút next page, có nút xem thêm sản phẩm</p>
+                <p>- Xem thêm sản phẩm: vào trang "Sản phẩm"</p>
+
+                <h5>Chi tiết ô sản phẩm (một ô sản phẩm trên 1 hàng)</h5>
+                <p>Tên sản phẩm</p>
+                Giá sản phẩm: Bao gồm giá bán và giá so sánh (thiết kế trường hợp có khoảng giá, ví dụ: 10.000VND - 15.000VND / 12.000 - 18.000).
+                <p>Nếu khoảng giá trùng nhau, ví  dụ 200.000 - 200.000 =&gt; chỉ hiển thị 1 giá 200.000</p>
+                <p>Ảnh sản phẩm: responsive trong khung cố định</p>
+                <p>Có tag: mới / khuyến mãi / Hết hàng. Rõ ràng.</p>
+                <p>Lưu ý: Tag khuyến mãi để giá trị % (ví dụ: -50%)</p>
+                <p>Xếp hạng (số sao - rating)</p>
+                <p>- Nút chính: Mua hàng ngay</p>
+                <p>- Nút phụ: Thêm vào giỏ hàng, Thêm vào mục yêu thích. Có thông báo khi thêm sản phẩm vào giỏ hàng/mục yêu thích thành công
+                    Thiết kế hiệu ứng cho trường hợp hover</p>
+                <p>Kích thước khung bao ngoài sản phẩm đề xuất bằng nhau, đảm bảo sự thẳng hàng giữa các sản phẩm (ảnh thẳng hàng, tên thẳng hàng, giá thẳng hàng...)</p>
+                <h5>Banner</h5>
+                banner quảng cáo. Vị trí đặt tùy ý.
+                Chú ý cố định kích thước nhất định cho banner tránh trường hợp ảnh banner quá nhỏ hoặc quá lớn gây xô lệch giao diện
+                <h5>Đối tác</h5>
+                Logo các đối tác (khách hàng đã mua...), tối thiểu 4 ảnh
+                <h5>Blog</h5>
+                Hiện thumbnail tối thiểu 3 bài viết. Thể hiện được: Người đăng, thời gian đăng, ảnh bài viết, đoạn tóm tắt ngắn, nút xem bài viết.
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
